@@ -1,9 +1,13 @@
 import { use, useMemo } from "react";
 import type { Route } from "./+types/posts.$slug";
 
-export async function loader({ params }: Route.LoaderArgs) {
+export const loader = async ({ params }: Route.LoaderArgs) => {
 	const module = await import(`../posts/${params.slug}.mdx`);
 	return { ...module.frontmatter };
+}
+
+export const HydrateFallback = () => {
+	return <div>Loading...</div>
 }
 
 export default ({ loaderData, params }: Route.ComponentProps) => {
