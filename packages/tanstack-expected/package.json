@@ -1,0 +1,42 @@
+{
+  "name": "@router-data-loading-example/tanstack-expected",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "generate-routes": "tsr generate",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "biome format",
+    "lint": "biome lint",
+    "check": "biome check"
+  },
+  "dependencies": {
+    "@tanstack/react-devtools": "latest",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-router-devtools": "latest",
+    "@tanstack/react-start": "latest",
+    "@tanstack/router-core": "^1.171.32",
+    "react": "^19.2.0",
+    "remark-frontmatter": "^5.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.5",
+    "@mdx-js/rollup": "^3.1.1",
+    "@tanstack/devtools-vite": "latest",
+    "@tanstack/router-cli": "^1.132.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "react-dom": "^19.2.0",
+    "remark-gfm": "^4.0.1",
+    "remark-mdx-frontmatter": "^5.2.0",
+    "rollup": "^4.63.4",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.0"
+  }
+}

@@ -1081,9 +1081,62 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@router-data-loading-example/rr-expected@workspace:packages/rr-expected":
+  version: 0.0.0-use.local
+  resolution: "@router-data-loading-example/rr-expected@workspace:packages/rr-expected"
+  dependencies:
+    "@mdx-js/rollup": "npm:^3.1.1"
+    "@react-router/dev": "npm:^8.4.0"
+    "@react-router/fs-routes": "npm:^8.4.0"
+    "@react-router/node": "npm:^8.4.0"
+    "@react-router/serve": "npm:^8.4.0"
+    "@types/node": "npm:^22"
+    "@types/react": "npm:^19.2.18"
+    "@types/react-dom": "npm:^19.2.7"
+    isbot: "npm:^5.1.36"
+    react: "npm:^19.2.8"
+    react-dom: "npm:^19.2.8"
+    react-router: "npm:^8.4.0"
+    remark-frontmatter: "npm:^5.0.0"
+    remark-gfm: "npm:^4.0.1"
+    remark-mdx-frontmatter: "npm:^5.2.0"
+    rollup: "npm:^4.63.4"
+    typescript: "npm:^5.9.3"
+    vite: "npm:^8.0.3"
+  languageName: unknown
+  linkType: soft
+
 "@router-data-loading-example/tanstack-actual@workspace:packages/tanstack-actual":
   version: 0.0.0-use.local
   resolution: "@router-data-loading-example/tanstack-actual@workspace:packages/tanstack-actual"
+  dependencies:
+    "@biomejs/biome": "npm:2.4.5"
+    "@mdx-js/rollup": "npm:^3.1.1"
+    "@tanstack/devtools-vite": "npm:latest"
+    "@tanstack/react-devtools": "npm:latest"
+    "@tanstack/react-router": "npm:latest"
+    "@tanstack/react-router-devtools": "npm:latest"
+    "@tanstack/react-start": "npm:latest"
+    "@tanstack/router-cli": "npm:^1.132.0"
+    "@tanstack/router-core": "npm:^1.171.32"
+    "@types/node": "npm:^22.10.2"
+    "@types/react": "npm:^19.2.0"
+    "@types/react-dom": "npm:^19.2.0"
+    "@vitejs/plugin-react": "npm:^6.0.1"
+    react: "npm:^19.2.0"
+    react-dom: "npm:^19.2.0"
+    remark-frontmatter: "npm:^5.0.0"
+    remark-gfm: "npm:^4.0.1"
+    remark-mdx-frontmatter: "npm:^5.2.0"
+    rollup: "npm:^4.63.4"
+    typescript: "npm:^6.0.2"
+    vite: "npm:^8.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@router-data-loading-example/tanstack-expected@workspace:packages/tanstack-expected":
+  version: 0.0.0-use.local
+  resolution: "@router-data-loading-example/tanstack-expected@workspace:packages/tanstack-expected"
   dependencies:
     "@biomejs/biome": "npm:2.4.5"
     "@mdx-js/rollup": "npm:^3.1.1"
@@ -5231,31 +5284,6 @@ __metadata:
   checksum: 10c0/3279de7450c8eae2f6e095e9edacbdeec0abb5cb7249c6e719faa0db2dba43574b4fff5892d9220631c9abaff52dd3cad648cfea2aaace845e1a071915ac8867
   languageName: node
   linkType: hard
-
-"rr-expected@workspace:packages/rr-expected":
-  version: 0.0.0-use.local
-  resolution: "rr-expected@workspace:packages/rr-expected"
-  dependencies:
-    "@mdx-js/rollup": "npm:^3.1.1"
-    "@react-router/dev": "npm:^8.4.0"
-    "@react-router/fs-routes": "npm:^8.4.0"
-    "@react-router/node": "npm:^8.4.0"
-    "@react-router/serve": "npm:^8.4.0"
-    "@types/node": "npm:^22"
-    "@types/react": "npm:^19.2.18"
-    "@types/react-dom": "npm:^19.2.7"
-    isbot: "npm:^5.1.36"
-    react: "npm:^19.2.8"
-    react-dom: "npm:^19.2.8"
-    react-router: "npm:^8.4.0"
-    remark-frontmatter: "npm:^5.0.0"
-    remark-gfm: "npm:^4.0.1"
-    remark-mdx-frontmatter: "npm:^5.2.0"
-    rollup: "npm:^4.63.4"
-    typescript: "npm:^5.9.3"
-    vite: "npm:^8.0.3"
-  languageName: unknown
-  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0

@@ -1,5 +1,5 @@
 {
-  "name": "rr-expected",
+  "name": "@router-data-loading-example/rr-expected",
   "private": true,
   "type": "module",
   "scripts": {
