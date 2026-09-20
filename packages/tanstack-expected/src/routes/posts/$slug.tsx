@@ -6,8 +6,12 @@ const PendingComponent = () => {
 
 export const Route = createFileRoute("/posts/$slug")({
   loader: async ({ params }) => {
+    // With other data collection...
     const module = await import(`../../posts/${params.slug}.mdx`);
-    return { ...module.frontmatter, Content: module.default };
+    return {
+      ...module.frontmatter,
+      Content: module.default /* ... other data */,
+    };
   },
   component: RouteComponent,
   pendingComponent: PendingComponent,
