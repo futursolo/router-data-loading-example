@@ -1086,6 +1086,7 @@ __metadata:
   resolution: "@router-data-loading-example/tanstack-actual@workspace:packages/tanstack-actual"
   dependencies:
     "@biomejs/biome": "npm:2.4.5"
+    "@mdx-js/rollup": "npm:^3.1.1"
     "@tanstack/devtools-vite": "npm:latest"
     "@tanstack/react-devtools": "npm:latest"
     "@tanstack/react-router": "npm:latest"
@@ -1099,6 +1100,10 @@ __metadata:
     "@vitejs/plugin-react": "npm:^6.0.1"
     react: "npm:^19.2.0"
     react-dom: "npm:^19.2.0"
+    remark-frontmatter: "npm:^5.0.0"
+    remark-gfm: "npm:^4.0.1"
+    remark-mdx-frontmatter: "npm:^5.2.0"
+    rollup: "npm:^4.63.4"
     typescript: "npm:^6.0.2"
     vite: "npm:^8.0.0"
   languageName: unknown
