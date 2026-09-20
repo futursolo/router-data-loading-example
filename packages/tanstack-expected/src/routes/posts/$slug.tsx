@@ -1,5 +1,4 @@
-import { Await, createFileRoute } from "@tanstack/react-router";
-import { useMemo } from "react";
+import { createFileRoute } from "@tanstack/react-router";
 
 const PendingComponent = () => {
   return <div>Loading...</div>;
@@ -8,7 +7,7 @@ const PendingComponent = () => {
 export const Route = createFileRoute("/posts/$slug")({
   loader: async ({ params }) => {
     const module = await import(`../../posts/${params.slug}.mdx`);
-    return { ...module.frontmatter };
+    return { ...module.frontmatter, Content: module.default };
   },
   component: RouteComponent,
   pendingComponent: PendingComponent,
@@ -16,20 +15,14 @@ export const Route = createFileRoute("/posts/$slug")({
 
 function RouteComponent() {
   const loaderData = Route.useLoaderData();
-  const params = Route.useParams();
 
-  const modulePromise = useMemo(
-    () => import(`../../posts/${params.slug}.mdx`),
-    [params.slug],
-  );
+  const { Content } = loaderData;
 
   return (
     <>
       <h1>{loaderData.title}</h1>
       <p>{loaderData.date}</p>
-      <Await promise={modulePromise} fallback={<PendingComponent />}>
-        {({ default: Content }) => <Content />}
-      </Await>
+      <Content />
     </>
   );
 }
