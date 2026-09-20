@@ -6,12 +6,12 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { defineConfig } from "vite";
 
 export const mdxPlugin = mdx({
-	remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
+  remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
 });
 
 export default defineConfig({
-	plugins: [mdxPlugin, reactRouter()],
-	resolve: {
-		tsconfigPaths: true,
-	},
+  plugins: [mdxPlugin, reactRouter()],
+  resolve: {
+    tsconfigPaths: true,
+  },
 });

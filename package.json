@@ -5,6 +5,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@biomejs/biome": "2.4.5"
+    "@biomejs/biome": "2.4.5",
+    "@yarnpkg/core": "^4.9.1",
+    "@yarnpkg/extensions": "^2.0.7",
+    "@yarnpkg/sdks": "^3.3.1"
   }
 }
