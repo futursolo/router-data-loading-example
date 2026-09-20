@@ -3,5 +3,8 @@
   "packageManager": "yarn@4.18.0",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "2.4.5"
+  }
 }
